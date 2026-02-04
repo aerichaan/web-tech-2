@@ -1,0 +1,32 @@
+<header class="header">
+  <h1> Student Management </h1>
+</header>
+
+<main class="container">
+  <div class="title-row">
+    <h2> <b> List of Students </b> </h2>
+
+    <!-- ROUTING CONNECTED HERE -->
+    <button class="add-btn" routerLink="/create-student">
+      <b> Add Student </b>
+    </button>
+  </div>
+
+  <section class="student-list">
+    <article
+      class="student-card"
+      *ngFor="let student of students; index as i"
+    >
+      <div class="student-details">
+        <strong>{{ student.name }}</strong>
+        <p>{{ student.course }}</p>
+        <p>{{ student.yearLevel }}</p>
+      </div>
+
+      <!-- DELETE CONNECTED TO TS -->
+      <button class="delete-btn" (click)="deleteStudent(i)">
+        <b> delete </b>
+      </button>
+    </article>
+  </section>
+</main>

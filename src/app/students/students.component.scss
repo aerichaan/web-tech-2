@@ -1,0 +1,65 @@
+.header {
+  padding: 1.5rem;
+  background-color: #050E3C;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.add-btn {
+  background-color: #163d09;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.student-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.student-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.student-details {
+  p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+.delete-btn {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  background-color:#740A03;
+  color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
