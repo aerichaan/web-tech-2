@@ -30,8 +30,18 @@
     </label>
 
     <label>
+      Course
+      <input type="text" [(ngModel)]="student.course" name="course" />
+    </label>
+
+    <label>
       GPA
       <input type="text" [(ngModel)]="student.gpa" name="gpa" />
+    </label>
+
+    <label>
+      Year Level
+      <input type="text" [(ngModel)]="student.yearLevel" name="yearLevel" />
     </label>
 
     <label>
@@ -42,7 +52,6 @@
         <option value="Not Enrolled">Not Enrolled</option>
     </select>
     </label>
-
 
     <div class="actions">
       <a routerLink="/students" class="back-btn">Back</a>
